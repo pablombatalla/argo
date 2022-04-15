@@ -20,3 +20,4 @@ spec:
     automated:
       prune: false
       selfHeal: false
+      allowEmpty: true
