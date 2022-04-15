@@ -4,6 +4,8 @@ metadata:
   name: nginx-ingress
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "ingress-example1"
+  labels:
+    app: nginx
 spec:
   rules:
   - http:
