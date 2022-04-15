@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: example1
+  namespace: web-app
 spec:
   selector:
     matchLabels:
