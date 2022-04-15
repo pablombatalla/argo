@@ -8,13 +8,15 @@ spec:
   source:
     repoURL: https://github.com/pablombatalla/argo.git
     targetRevision: HEAD
-    path: test
+    path: test/
     directory:
       recurse: true
   destination:
     server: https://kubernetes.default.svc
     namespace: example1
   syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
     automated:
       prune: false
       selfHeal: false
