@@ -9,3 +9,6 @@ spec:
   sessionAffinity:
     affinityType: "GENERATED_COOKIE"
     affinityCookieTtlSec: 86400
+  logging:
+    enable: true
+    sampleRate: 0.5
