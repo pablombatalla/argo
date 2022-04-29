@@ -146,10 +146,10 @@ spec:
           subPath: mysql
         - name: conf
           mountPath: /etc/mysql/conf.d
-        resources:
-          requests:
-            cpu: 100m
-            memory: 100Mi
+#        resources:
+#          requests:
+#            cpu: 100m
+#            memory: 100Mi
       volumes:
       - name: conf
         emptyDir: {}
