@@ -1,4 +1,0 @@
-mysql-deployment.yaml
-mysql-pv.yaml
-mysql-pvc.yaml
-mysql-service.yaml
