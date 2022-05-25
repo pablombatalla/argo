@@ -16,3 +16,10 @@ spec:
             name: nginx-service
             port:
               number: 8080
+      - path: "/pablo/*"
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: my-xn-service
+            port:
+              number: 8080
