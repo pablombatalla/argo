@@ -20,6 +20,6 @@ spec:
         pathType: ImplementationSpecific
         backend:
           service:
-            name: my-xn-service
+            name: neg-demo-svc
             port:
               number: 80
