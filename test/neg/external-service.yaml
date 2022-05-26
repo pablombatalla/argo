@@ -17,7 +17,7 @@ metadata:
   name: external-ip
 subsets:
 - addresses:
-  - ip: 10.164.0.29
+  - ip: 35.204.211.91
   ports:
   - name: app
     port: 80

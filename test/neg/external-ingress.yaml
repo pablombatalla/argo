@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: external-service
+spec:
+  rules:
+  - host: 91.211.204.35.bc.googleusercontent.com
+    http:
+      paths:
+      - backend:
+          serviceName: external-ip
+          servicePort: 80
+        path: /
