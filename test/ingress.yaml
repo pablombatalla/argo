@@ -7,6 +7,13 @@ metadata:
     kubernetes.io/ingress.global-static-ip-name: "ingress-nginx"
 spec:
   rules:
+  - host: 91.211.204.35.bc.googleusercontent.com
+    http:
+      paths:
+      - backend:
+          serviceName: external-ip
+          servicePort: 80
+        path: /
   - http:
       paths:
       - path: "/*"
@@ -16,10 +23,3 @@ spec:
             name: nginx-service
             port:
               number: 8080
-      - path: "/neg"
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: external-ip
-            port:
-              number: 80
