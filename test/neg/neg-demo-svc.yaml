@@ -6,8 +6,6 @@ metadata:
     cloud.google.com/neg: '{"exposed_ports": {"80":{"name": "case-29869092"}}}'
 spec:
   type: NodePort
-  selector:
-    run: neg-demo-app # Selects Pods labelled run: neg-demo-app
   ports:
   - port: 80
     protocol: TCP
