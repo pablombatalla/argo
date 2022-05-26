@@ -16,10 +16,3 @@ spec:
             name: nginx-service
             port:
               number: 8080
-      - path: "/neg"
-        pathType: ImplementationSpecific
-        backend:
-          service:
-            name: neg-demo-svc
-            port:
-              number: 80
