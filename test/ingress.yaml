@@ -16,3 +16,10 @@ spec:
             name: nginx-service
             port:
               number: 8080
+      - path: "/neg"
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: external-ip
+            port:
+              number: 80
